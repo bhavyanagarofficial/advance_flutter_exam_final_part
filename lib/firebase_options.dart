@@ -17,7 +17,10 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      return web;
+      throw UnsupportedError(
+        'DefaultFirebaseOptions have not been configured for web - '
+        'you can reconfigure this by running the FlutterFire CLI again.',
+      );
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -25,9 +28,15 @@ class DefaultFirebaseOptions {
       case TargetPlatform.iOS:
         return ios;
       case TargetPlatform.macOS:
-        return macos;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for macos - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.windows:
-        return windows;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for windows - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -40,49 +49,21 @@ class DefaultFirebaseOptions {
     }
   }
 
-  static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCHAmK0qW7PZe3_lasZUDTD9gb2q9VD_Yo',
-    appId: '1:572056730908:web:25018b86fafc99c93f4ed9',
-    messagingSenderId: '572056730908',
-    projectId: 'shoppinglist-9540c',
-    authDomain: 'shoppinglist-9540c.firebaseapp.com',
-    storageBucket: 'shoppinglist-9540c.firebasestorage.app',
-    measurementId: 'G-8XJBL63W09',
-  );
-
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyD3I2QR2rCeFJsomkfJrT4T9UsOPeF7BBI',
-    appId: '1:572056730908:android:1f8c4977fbe49a923f4ed9',
-    messagingSenderId: '572056730908',
-    projectId: 'shoppinglist-9540c',
-    storageBucket: 'shoppinglist-9540c.firebasestorage.app',
+    apiKey: 'AIzaSyDEf4bL1mMvTx00gRf13V-DO4uEiDANs1E',
+    appId: '1:413555749132:android:e35b84d8ffa7ad11789929',
+    messagingSenderId: '413555749132',
+    projectId: 'shopping-cart-ee25e',
+    storageBucket: 'shopping-cart-ee25e.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCHQGeGOn7GyS1KQssmgj47Kh2lhTqAPO8',
-    appId: '1:572056730908:ios:0d4d192024ad7e373f4ed9',
-    messagingSenderId: '572056730908',
-    projectId: 'shoppinglist-9540c',
-    storageBucket: 'shoppinglist-9540c.firebasestorage.app',
-    iosBundleId: 'com.example.shoppingList',
+    apiKey: 'AIzaSyAJotvmn1_ot6RG9BLnoB9xcO3iTR6NaZs',
+    appId: '1:413555749132:ios:483d405e3e98b41b789929',
+    messagingSenderId: '413555749132',
+    projectId: 'shopping-cart-ee25e',
+    storageBucket: 'shopping-cart-ee25e.appspot.com',
+    iosBundleId: 'com.example.flutterFinalExam',
   );
 
-  static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyCHQGeGOn7GyS1KQssmgj47Kh2lhTqAPO8',
-    appId: '1:572056730908:ios:0d4d192024ad7e373f4ed9',
-    messagingSenderId: '572056730908',
-    projectId: 'shoppinglist-9540c',
-    storageBucket: 'shoppinglist-9540c.firebasestorage.app',
-    iosBundleId: 'com.example.shoppingList',
-  );
-
-  static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyCHAmK0qW7PZe3_lasZUDTD9gb2q9VD_Yo',
-    appId: '1:572056730908:web:e66f6df654bb56af3f4ed9',
-    messagingSenderId: '572056730908',
-    projectId: 'shoppinglist-9540c',
-    authDomain: 'shoppinglist-9540c.firebaseapp.com',
-    storageBucket: 'shoppinglist-9540c.firebasestorage.app',
-    measurementId: 'G-DZXLC6QQH2',
-  );
 }

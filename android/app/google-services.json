@@ -1,21 +1,40 @@
 {
   "project_info": {
-    "project_number": "572056730908",
-    "project_id": "shoppinglist-9540c",
-    "storage_bucket": "shoppinglist-9540c.firebasestorage.app"
+    "project_number": "413555749132",
+    "project_id": "shopping-cart-ee25e",
+    "storage_bucket": "shopping-cart-ee25e.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:572056730908:android:1f8c4977fbe49a923f4ed9",
+        "mobilesdk_app_id": "1:413555749132:android:75be8c2fd21e85a5789929",
         "android_client_info": {
-          "package_name": "com.example.shopping_list"
+          "package_name": "com.example.app"
         }
       },
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyD3I2QR2rCeFJsomkfJrT4T9UsOPeF7BBI"
+          "current_key": "AIzaSyDEf4bL1mMvTx00gRf13V-DO4uEiDANs1E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413555749132:android:e35b84d8ffa7ad11789929",
+        "android_client_info": {
+          "package_name": "com.example.flutter_final_exam"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEf4bL1mMvTx00gRf13V-DO4uEiDANs1E"
         }
       ],
       "services": {

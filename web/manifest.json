@@ -1,6 +1,6 @@
 {
-    "name": "shopping_list",
-    "short_name": "shopping_list",
+    "name": "flutter_final_exam",
+    "short_name": "flutter_final_exam",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
